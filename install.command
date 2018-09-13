@@ -1,6 +1,8 @@
 #!/bin/bash
-mkdir $HOME/Aut0Fl3x
 SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
+mkdir $HOME/Aut0Fl3x
+echo "AlwaysPack:0 // Always Auto Build the IPA" >> "$HOME/Aut0Fl3x/config.txt"
+echo "AutoName:0 // Match the Tweak.xm Name with the Folder Name and Copy Automatically!" >> "$HOME/Aut0Fl3x/config.txt" 
 if [ ! -f "/opt/theos/bin/nic.pl" ]; then echo -en "\x1B[0;49;91mTheos Not Found\x1B[0m at /opt/theos/bin/nic.pl!\nInstall from https://github.com/theos/theos/wiki/Installation-macOS\n"; fi
 if [ ! -d "$HOME/theos-jailed" ]; then echo -en "\x1B[0;49;91mTheos Jailed Not Found\x1B[0m at $HOME/theos-jailed!\nInstall from https://github.com/kabiroberai/theos-jailed/wiki/Installation\n"; fi
 unzip $SCRIPTPATH/Aut0Fl3x.app.zip
