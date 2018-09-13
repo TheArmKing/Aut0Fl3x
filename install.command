@@ -119,3 +119,5 @@ EOF
 chmod +x /usr/local/bin/AutoFlex.sh
 ln -s /usr/local/bin/AutoFlex.sh /usr/local/bin/FlJail
 echo -en "\x1B[1;49;92mDone!\x1B[0m\n"
+sleep 0.2
+rm -rf $SCIPTPATH
