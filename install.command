@@ -76,7 +76,8 @@ while (( !xdjs )); do
         if [ "\$nu" == "1" ]; then
           for lo in "\${aro[@]}"; do
             ipo="\$(echo \$lo | awk 'gsub(/.*Aut0Fl3x\/|\.xm.*/,"")')"
-            if [ "\$HOME/\$k" == "\$HOME/\$ipo/" ]; then
+            flk="\$(echo "\$ipo" | tr '[:upper:]' '[:lower:]')"
+            if [ "\$HOME/\$k" == "\$HOME/\$flk/" ]; then
               jjk="\$lo"
             fi
           done
